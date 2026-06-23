@@ -7,9 +7,15 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), "Inter Fallback", -apple-system, Arial, sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
   --font-heading: var(--font-sans);
+
+  /* Tesla design tokens (cloned, sRGB) */
+  --color-ink: var(--tsla-ink);
+  --color-body: var(--tsla-text);
+  --color-tslblue: var(--tsla-blue);
+  --color-panel: var(--tsla-panel);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -49,6 +55,14 @@
 }
 
 :root {
+  /* Tesla cloned palette */
+  --tsla-ink: #171a20;
+  --tsla-text: #393c41;
+  --tsla-blue: #3e6ae1;
+  --tsla-blue-hover: #3457b1;
+  --tsla-panel: #f4f4f4;
+  --tsla-header-h: 56px;
+
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -123,8 +137,126 @@
   }
   body {
     @apply bg-background text-foreground;
+    color: var(--tsla-text);
+    -webkit-font-smoothing: antialiased;
   }
   html {
     @apply font-sans;
+    scroll-behavior: smooth;
   }
 }
+
+/* ===== Tesla-cloned component utilities ===== */
+@layer components {
+  /* Full-bleed product/feature panel */
+  .tcl-panel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+  }
+
+  /* Big panel heading */
+  .tcl-heading {
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    font-size: clamp(28px, 4.6vw, 40px);
+  }
+
+  /* Underlined offer/spec sub-link */
+  .tcl-sublink {
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: inherit;
+    transition: opacity 0.15s ease;
+  }
+  .tcl-sublink:hover { opacity: 0.7; }
+
+  /* Eyebrow label above a product name */
+  .tcl-eyebrow {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
+  /* CTA buttons */
+  .tcl-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    min-width: 130px;
+    padding: 0 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  }
+  .tcl-btn-primary { background: var(--tsla-blue); color: #fff; }
+  .tcl-btn-primary:hover { background: var(--tsla-blue-hover); }
+  /* Translucent light button (over media) */
+  .tcl-btn-light { background: rgba(244, 244, 244, 0.65); color: var(--tsla-ink); backdrop-filter: blur(2px); }
+  .tcl-btn-light:hover { background: rgba(255, 255, 255, 0.92); }
+  /* Translucent dark button (over light media) */
+  .tcl-btn-dark { background: rgba(23, 26, 32, 0.65); color: #fff; backdrop-filter: blur(2px); }
+  .tcl-btn-dark:hover { background: rgba(23, 26, 32, 0.85); }
+  /* Plain text link button */
+  .tcl-btn-text {
+    background: transparent;
+    min-width: 0;
+    height: auto;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: inherit;
+  }
+  .tcl-btn-text:hover { opacity: 0.7; }
+
+  /* Header nav item */
+  .tcl-nav-item {
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--tsla-ink);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.15s ease;
+  }
+  .tcl-nav-item:hover { background: rgba(0, 0, 0, 0.05); }
+  .tcl-nav-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    color: var(--tsla-ink);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+  }
+  .tcl-nav-icon:hover { background: rgba(0, 0, 0, 0.05); }
+}
+
+/* Hide scrollbars on horizontal carousels */
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
