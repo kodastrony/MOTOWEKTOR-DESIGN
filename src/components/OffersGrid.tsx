@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { OfferTile } from "@/types";
 import { CtaButton } from "./CtaButton";
 
@@ -8,17 +9,17 @@ export function OffersGrid({ tiles }: { tiles: OfferTile[] }) {
         {tiles.map((tile) => (
           <article
             key={tile.id}
-            className="relative flex min-h-[200px] items-stretch overflow-hidden rounded-[4px]"
-            style={{ background: "var(--tsla-panel)" }}
+            className="relative flex min-h-[220px] items-stretch overflow-hidden rounded-[6px]"
+            style={{ background: "var(--mw-panel)" }}
           >
             <div className="flex flex-1 flex-col p-7 sm:p-9">
               <h3
-                className="font-medium text-[#171a20]"
+                className="font-bold text-[var(--mw-ink)]"
                 style={{ fontSize: "clamp(22px,2.2vw,28px)" }}
               >
                 {tile.title}
               </h3>
-              <p className="mt-1 max-w-[26ch] text-sm text-[#393c41]">
+              <p className="mt-1 max-w-[30ch] text-sm text-[var(--mw-text)]">
                 {tile.description}
               </p>
               <div className="mt-auto flex flex-wrap gap-2 pt-5">
@@ -29,11 +30,23 @@ export function OffersGrid({ tiles }: { tiles: OfferTile[] }) {
                 ))}
               </div>
             </div>
-            <div
-              className="hidden w-[42%] shrink-0 sm:block"
-              style={{ background: tile.thumb }}
-              aria-hidden
-            />
+            {tile.image ? (
+              <div className="relative hidden w-[44%] shrink-0 sm:block">
+                <Image
+                  src={tile.image}
+                  alt={tile.title}
+                  fill
+                  sizes="320px"
+                  className="object-contain object-center p-3"
+                />
+              </div>
+            ) : (
+              <div
+                className="hidden w-[44%] shrink-0 sm:block"
+                style={{ background: tile.thumb }}
+                aria-hidden
+              />
+            )}
           </article>
         ))}
       </div>

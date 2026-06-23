@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import type { ProductCard } from "@/types";
 import { CtaButton } from "./CtaButton";
 import { ChevronLeftIcon, ChevronRightIcon } from "./icons";
@@ -37,36 +38,46 @@ export function ProductCarousel({ cards }: { cards: ProductCard[] }) {
         {cards.map((card) => (
           <article
             key={card.id}
-            className="relative shrink-0 snap-start overflow-hidden"
+            className="relative flex shrink-0 snap-start flex-col overflow-hidden rounded-[6px]"
             style={{
               background: card.background,
-              height: "min(72vh, 560px)",
+              height: "min(74vh, 560px)",
               width: "85%",
               flexBasis: "85%",
             }}
           >
-            <div
-              className="flex h-full w-full flex-col justify-between p-6 sm:p-9"
-              style={{ color: card.textTone === "light" ? "#fff" : "var(--tsla-ink)" }}
-            >
-              <p className="tcl-eyebrow">{card.eyebrow}</p>
-              <div>
-                <h3
-                  className="font-medium"
-                  style={{ fontSize: "clamp(30px,3.4vw,44px)", lineHeight: 1.12 }}
-                >
-                  {card.name}
-                </h3>
-                <a href={card.subLink.href} className="tcl-sublink mt-1 inline-block">
-                  {card.subLink.label}
-                </a>
-                <div className="mt-5 flex w-full max-w-[320px] flex-col gap-3 sm:max-w-none sm:flex-row">
-                  {card.ctas.map((cta) => (
-                    <div key={cta.label} className="sm:w-[180px]">
-                      <CtaButton cta={cta} />
-                    </div>
-                  ))}
-                </div>
+            {/* product photo */}
+            {card.image && (
+              <div className="relative w-full flex-1">
+                <Image
+                  src={card.image}
+                  alt={card.name}
+                  fill
+                  sizes="(max-width: 768px) 85vw, 640px"
+                  className="object-contain object-center p-4"
+                />
+              </div>
+            )}
+            {/* info */}
+            <div className="px-7 pb-8 pt-2 text-[var(--mw-ink)] sm:px-9">
+              <p
+                className="tcl-eyebrow uppercase"
+                style={{ color: "var(--mw-yellow)", letterSpacing: "0.06em" }}
+              >
+                {card.eyebrow}
+              </p>
+              <h3 className="mt-1 font-bold" style={{ fontSize: "clamp(24px,2.6vw,32px)" }}>
+                {card.name}
+              </h3>
+              <a href={card.subLink.href} className="tcl-sublink mt-1 inline-block text-[var(--mw-text)]">
+                {card.subLink.label}
+              </a>
+              <div className="mt-4 flex flex-col gap-2.5 sm:flex-row">
+                {card.ctas.map((cta) => (
+                  <div key={cta.label} className="sm:w-[170px]">
+                    <CtaButton cta={cta} />
+                  </div>
+                ))}
               </div>
             </div>
           </article>
@@ -76,19 +87,19 @@ export function ProductCarousel({ cards }: { cards: ProductCard[] }) {
       {/* Arrows (desktop) */}
       <button
         type="button"
-        aria-label="Previous"
+        aria-label="Poprzedni"
         onClick={() => scrollToCard(active - 1)}
         disabled={active === 0}
-        className="absolute left-5 top-1/2 hidden -translate-y-1/2 items-center justify-center rounded bg-white/80 p-2 text-[#171a20] shadow backdrop-blur transition hover:bg-white disabled:opacity-0 lg:flex"
+        className="absolute left-5 top-1/2 hidden -translate-y-1/2 items-center justify-center rounded bg-white/90 p-2 text-[var(--mw-ink)] shadow ring-1 ring-black/5 backdrop-blur transition hover:bg-white disabled:opacity-0 lg:flex"
       >
         <ChevronLeftIcon width={22} height={22} />
       </button>
       <button
         type="button"
-        aria-label="Next"
+        aria-label="Następny"
         onClick={() => scrollToCard(active + 1)}
         disabled={active >= cards.length - 1}
-        className="absolute right-5 top-1/2 hidden -translate-y-1/2 items-center justify-center rounded bg-white/80 p-2 text-[#171a20] shadow backdrop-blur transition hover:bg-white disabled:opacity-0 lg:flex"
+        className="absolute right-5 top-1/2 hidden -translate-y-1/2 items-center justify-center rounded bg-white/90 p-2 text-[var(--mw-ink)] shadow ring-1 ring-black/5 backdrop-blur transition hover:bg-white disabled:opacity-0 lg:flex"
       >
         <ChevronRightIcon width={22} height={22} />
       </button>
@@ -99,10 +110,10 @@ export function ProductCarousel({ cards }: { cards: ProductCard[] }) {
           <button
             key={c.id}
             type="button"
-            aria-label={`Go to card ${i + 1}`}
+            aria-label={`Karta ${i + 1}`}
             onClick={() => scrollToCard(i)}
             className="h-2 w-2 rounded-full transition"
-            style={{ background: i === active ? "var(--tsla-ink)" : "rgba(23,26,32,0.3)" }}
+            style={{ background: i === active ? "var(--mw-yellow)" : "rgba(31,34,37,0.25)" }}
           />
         ))}
       </div>

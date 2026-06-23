@@ -1,39 +1,47 @@
+import Image from "next/image";
 import type { HeroSlide } from "@/types";
 import { CtaButton } from "./CtaButton";
 
-/** A single full-bleed product panel (non-carousel), e.g. the energy section. */
+/** A single full-width product panel (non-carousel) with a real photo. */
 export function ProductPanel({ data }: { data: HeroSlide }) {
   return (
     <section
       className="relative w-full overflow-hidden"
       style={{ background: data.background, height: "min(84vh, 620px)" }}
     >
-      <div
-        className="flex h-full w-full flex-col items-center px-5 text-center"
-        style={{
-          paddingTop: "8vh",
-          color: data.textTone === "light" ? "#fff" : "var(--tsla-ink)",
-        }}
-      >
-        {data.eyebrow && <p className="tcl-eyebrow mb-1">{data.eyebrow}</p>}
-        <h2
-          className="font-medium"
-          style={{ fontSize: "clamp(30px,4vw,44px)", lineHeight: 1.12 }}
-        >
-          {data.name}
-        </h2>
+      <div className="mx-auto flex h-full w-full max-w-6xl flex-col items-center px-5 pt-[6vh] text-center">
+        {data.eyebrow && (
+          <p
+            className="tcl-eyebrow mb-2 uppercase"
+            style={{ color: "var(--mw-yellow)", letterSpacing: "0.06em" }}
+          >
+            {data.eyebrow}
+          </p>
+        )}
+        <h2 className="tcl-heading max-w-[18ch] text-[var(--mw-ink)]">{data.name}</h2>
         {data.subLink && (
-          <a href={data.subLink.href} className="tcl-sublink mt-1">
+          <a href={data.subLink.href} className="tcl-sublink mt-2 text-[var(--mw-text)]">
             {data.subLink.label}
           </a>
         )}
         <div className="mt-6 flex w-full max-w-[340px] flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center">
           {data.ctas.map((cta) => (
-            <div key={cta.label} className="sm:w-[200px]">
+            <div key={cta.label} className="sm:w-[210px]">
               <CtaButton cta={cta} />
             </div>
           ))}
         </div>
+        {data.image && (
+          <div className="relative mt-3 w-full flex-1">
+            <Image
+              src={data.image}
+              alt={data.name}
+              fill
+              sizes="(max-width: 768px) 100vw, 1100px"
+              className="object-contain object-bottom"
+            />
+          </div>
+        )}
       </div>
     </section>
   );

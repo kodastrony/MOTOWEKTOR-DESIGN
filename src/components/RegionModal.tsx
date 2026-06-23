@@ -12,28 +12,28 @@ export function RegionModal() {
         type="button"
         aria-label="Close"
         onClick={() => setOpen(false)}
-        className="absolute right-3 top-3 text-[#5c5e62] transition hover:text-[#171a20]"
+        className="absolute right-3 top-3 text-[var(--mw-grey)] transition hover:text-[var(--mw-ink)]"
       >
         <CloseIcon width={18} height={18} />
       </button>
-      <h3 className="pr-6 text-[17px] font-medium text-[#171a20]">
+      <h3 className="pr-6 text-[17px] font-medium text-[var(--mw-ink)]">
         Confirm your location
       </h3>
-      <p className="mt-1 text-sm text-[#393c41]">
+      <p className="mt-1 text-sm text-[var(--mw-text)]">
         Choose a region to see content tailored to your location.
       </p>
       <div className="mt-4 flex gap-2">
         <button
           type="button"
           onClick={() => setOpen(false)}
-          className="flex-1 rounded-[4px] bg-[#393c41] py-2 text-sm font-medium text-white transition hover:bg-[#26282c]"
+          className="flex-1 rounded-[4px] bg-[var(--mw-text)] py-2 text-sm font-medium text-white transition hover:bg-[#26282c]"
         >
           Region A
         </button>
         <button
           type="button"
           onClick={() => setOpen(false)}
-          className="flex-1 rounded-[4px] border border-[#d0d1d3] bg-white py-2 text-sm font-medium text-[#171a20] transition hover:bg-[#f4f4f4]"
+          className="flex-1 rounded-[4px] border border-[#d0d1d3] bg-white py-2 text-sm font-medium text-[var(--mw-ink)] transition hover:bg-[#f4f4f4]"
         >
           Region B
         </button>

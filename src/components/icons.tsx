@@ -1,31 +1,24 @@
 import type { SVGProps } from "react";
+import Image from "next/image";
 
-/**
- * Placeholder brand wordmark — NOT the cloned site's logo.
- * Generic letter-spaced wordmark; swap for the real brand later.
- */
+/** MotoWektor brand wordmark (real logo). */
 export function LogoWordmark({
   className,
-  label = "MOTORS",
+  label = "MotoWektor",
 }: {
   className?: string;
   label?: string;
 }) {
   return (
-    <span
+    <Image
+      src="/images/motowektor/logo.png"
+      alt={label}
+      width={199}
+      height={26}
+      priority
       className={className}
-      style={{
-        fontWeight: 700,
-        fontSize: 17,
-        letterSpacing: "0.35em",
-        lineHeight: 1,
-        userSelect: "none",
-        whiteSpace: "nowrap",
-      }}
-      aria-label={label}
-    >
-      {label}
-    </span>
+      style={{ height: 26, width: "auto", display: "block" }}
+    />
   );
 }
 
@@ -126,6 +119,22 @@ export function ArrowUpIcon(props: IconProps) {
   return (
     <svg {...base(props)}>
       <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+  );
+}
+
+export function PhoneIcon(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M3 5.5C3 4.1 4.1 3 5.5 3H7l2 4.5-1.8 1.2a12 12 0 0 0 5.1 5.1L13.5 16 18 18v1.5c0 1.4-1.1 2.5-2.5 2.5A13.5 13.5 0 0 1 3 8.5Z" />
+    </svg>
+  );
+}
+
+export function ArrowRightIcon(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M5 12h14M13 6l6 6-6 6" />
     </svg>
   );
 }

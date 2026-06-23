@@ -8,13 +8,12 @@ import { ProductPanel } from "@/components/ProductPanel";
 import { CtaStrip } from "@/components/CtaStrip";
 import { SiteFooter } from "@/components/SiteFooter";
 import { StickyBottomBars } from "@/components/StickyBottomBars";
-import { RegionModal } from "@/components/RegionModal";
 import {
   heroSlides,
   featureCard,
   productCards,
   offerTiles,
-  solarPanel,
+  dealerPanel,
 } from "@/lib/content";
 
 export default function Home() {
@@ -22,24 +21,25 @@ export default function Home() {
     <>
       <SiteHeader />
       <main className="flex-1">
-        {/* 0 — Hero crossfade carousel */}
+        {/* Hero — flagship zabudowy (kontener, chłodnie) */}
         <HeroCarousel slides={heroSlides} />
-        {/* 1 — Feature / video card */}
+        {/* Feature — TechnikPRO configurator */}
         <FeatureCard data={featureCard} />
-        {/* 2 — Product card carousel */}
+        {/* Body-type lineup */}
         <ProductCarousel cards={productCards} />
-        {/* 3 — Offers / Inventory grid */}
+        {/* Realizacje / Serwis tiles */}
         <OffersGrid tiles={offerTiles} />
-        {/* 4 — Charging network map */}
+        {/* Service network map */}
         <ChargingMapSection />
-        {/* 5 — Energy / solar product panel */}
-        <ProductPanel data={solarPanel} />
-        {/* 6 — CTA strip */}
+        {/* Skrzynie otwarte panel */}
+        <ProductPanel data={dealerPanel} />
+        {/* Quick links */}
         <CtaStrip />
       </main>
       <SiteFooter />
+      {/* clearance so the fixed bottom bar floats over empty space, not footer content */}
+      <div aria-hidden className="h-[84px]" />
       <StickyBottomBars />
-      <RegionModal />
     </>
   );
 }

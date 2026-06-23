@@ -8,7 +8,7 @@ export function CtaStrip() {
           <a
             key={link.label}
             href={link.href}
-            className="flex min-h-[72px] items-center justify-center rounded-[4px] px-4 text-center text-sm font-medium text-[#171a20] transition hover:bg-[#eaeaec]"
+            className="flex min-h-[72px] items-center justify-center rounded-[4px] px-4 text-center text-sm font-medium text-[var(--mw-ink)] transition hover:bg-[var(--mw-panel)]"
             style={{ background: "var(--tsla-panel)" }}
           >
             {link.label}

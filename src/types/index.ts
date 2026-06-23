@@ -12,10 +12,21 @@ export interface HeroSlide {
   name: string;
   subLink?: { label: string; href: string };
   ctas: Cta[];
-  /** CSS background (gradient placeholder standing in for full-bleed media) */
+  /** CSS background for the panel (light gradient / solid) */
   background: string;
+  /** Real product photo (transparent cutout) shown over the background */
+  image?: string;
   /** Whether overlaid text/controls read better as dark or light */
   textTone: "dark" | "light";
+}
+
+/** A body-type / product used in the offer grid and the "Zabudowy" mega-menu */
+export interface OfferProduct {
+  id: string;
+  name: string;
+  desc: string;
+  image: string;
+  href: string;
 }
 
 export interface ProductCard {
@@ -25,6 +36,7 @@ export interface ProductCard {
   subLink: { label: string; href: string };
   ctas: Cta[];
   background: string;
+  image?: string;
   textTone: "dark" | "light";
 }
 
@@ -43,6 +55,23 @@ export interface OfferTile {
   ctas: Cta[];
   /** small thumbnail gradient on the right */
   thumb: string;
+  /** optional product photo shown on the right instead of the gradient */
+  image?: string;
+}
+
+export interface FooterColumn {
+  heading: string;
+  links: { label: string; href: string }[];
+}
+
+export interface ContactInfo {
+  company: string;
+  address: string;
+  phoneMain: string;
+  phoneSales: string;
+  email: string;
+  hoursSales: string;
+  hoursService: string;
 }
 
 export interface NavLink {
