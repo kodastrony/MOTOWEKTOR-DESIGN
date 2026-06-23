@@ -10,9 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Clone — Electric Cars & Clean Energy",
+  title: "MotoWektor — Sprawdzone zabudowy samochodów dostawczych",
   description:
-    "Structural/functional clone of a vehicle marketing homepage (placeholder content). Built as a Next.js scaffold.",
+    "Producent profesjonalnych zabudów do samochodów dostawczych od 2008 roku — kontenery, chłodnie i izotermy, skrzynie, TwinCab, furgony serwisowe. Bielsko-Biała.",
 };
 
 export default function RootLayout({

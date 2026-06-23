@@ -62,7 +62,7 @@ export function ProductCarousel({ cards }: { cards: ProductCard[] }) {
             <div className="px-7 pb-8 pt-2 text-[var(--mw-ink)] sm:px-9">
               <p
                 className="tcl-eyebrow uppercase"
-                style={{ color: "var(--mw-yellow)", letterSpacing: "0.06em" }}
+                style={{ color: "var(--mw-amber)", letterSpacing: "0.06em" }}
               >
                 {card.eyebrow}
               </p>

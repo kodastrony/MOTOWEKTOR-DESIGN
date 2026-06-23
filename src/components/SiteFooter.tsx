@@ -23,7 +23,7 @@ export function SiteFooter() {
           <p className="mt-3 text-sm">
             <a
               href={telHref}
-              className="font-semibold text-[var(--mw-ink)] transition hover:text-[var(--mw-yellow)]"
+              className="font-semibold text-[var(--mw-ink)] transition hover:text-[var(--mw-amber)]"
             >
               {contact.phoneSales}
             </a>

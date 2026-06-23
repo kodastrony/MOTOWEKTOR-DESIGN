@@ -13,7 +13,7 @@ export function StickyBottomBars() {
           href={tel}
           className="pointer-events-auto flex flex-1 items-center gap-2 rounded-full bg-white/95 px-4 py-3 text-sm shadow-[0_4px_16px_rgba(0,0,0,0.12)] ring-1 ring-black/5 backdrop-blur transition hover:bg-white"
         >
-          <PhoneIcon width={18} height={18} className="shrink-0 text-[var(--mw-yellow)]" />
+          <PhoneIcon width={18} height={18} className="shrink-0 text-[var(--mw-amber)]" />
           <span className="font-semibold text-[var(--mw-ink)]">Zadzwoń</span>
           <span className="hidden text-[var(--mw-text)] sm:inline">{contact.phoneSales}</span>
         </a>

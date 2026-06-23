@@ -3,7 +3,7 @@ import { HeroCarousel } from "@/components/HeroCarousel";
 import { FeatureCard } from "@/components/FeatureCard";
 import { ProductCarousel } from "@/components/ProductCarousel";
 import { OffersGrid } from "@/components/OffersGrid";
-import { ChargingMapSection } from "@/components/ChargingMapSection";
+import { ServiceNetwork } from "@/components/ServiceNetwork";
 import { ProductPanel } from "@/components/ProductPanel";
 import { CtaStrip } from "@/components/CtaStrip";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -30,7 +30,7 @@ export default function Home() {
         {/* Realizacje / Serwis tiles */}
         <OffersGrid tiles={offerTiles} />
         {/* Service network map */}
-        <ChargingMapSection />
+        <ServiceNetwork />
         {/* Skrzynie otwarte panel */}
         <ProductPanel data={dealerPanel} />
         {/* Quick links */}

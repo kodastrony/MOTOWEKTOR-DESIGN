@@ -50,7 +50,7 @@ export function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
             {slide.eyebrow && (
               <p
                 className="tcl-eyebrow mb-2 uppercase"
-                style={{ color: "var(--mw-yellow)", letterSpacing: "0.06em" }}
+                style={{ color: "var(--mw-amber)", letterSpacing: "0.06em" }}
               >
                 {slide.eyebrow}
               </p>

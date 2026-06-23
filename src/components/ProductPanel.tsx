@@ -13,7 +13,7 @@ export function ProductPanel({ data }: { data: HeroSlide }) {
         {data.eyebrow && (
           <p
             className="tcl-eyebrow mb-2 uppercase"
-            style={{ color: "var(--mw-yellow)", letterSpacing: "0.06em" }}
+            style={{ color: "var(--mw-amber)", letterSpacing: "0.06em" }}
           >
             {data.eyebrow}
           </p>

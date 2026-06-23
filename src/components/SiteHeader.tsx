@@ -139,7 +139,7 @@ function OfertaMegaMenu({ onClose }: { onClose: () => void }) {
               <li key={l.label}>
                 <a
                   href={l.href}
-                  className="text-sm text-[var(--mw-ink)] transition hover:text-[var(--mw-yellow)]"
+                  className="text-sm text-[var(--mw-ink)] transition hover:text-[var(--mw-amber)]"
                 >
                   {l.label}
                 </a>

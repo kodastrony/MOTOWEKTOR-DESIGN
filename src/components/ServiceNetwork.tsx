@@ -1,7 +1,7 @@
 import { CtaButton } from "./CtaButton";
 import { serviceSection } from "@/lib/content";
 
-export function ChargingMapSection() {
+export function ServiceNetwork() {
   const { heading, subheading, cta, background } = serviceSection;
   return (
     <section
