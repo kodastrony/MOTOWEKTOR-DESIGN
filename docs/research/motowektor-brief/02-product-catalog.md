@@ -1,0 +1,68 @@
+# MotoWektor — Catalog of Product Offer (Zabudowy / Vehicle Bodies)
+
+Source: [motowektor.pl/oferta.html](https://www.motowektor.pl/oferta.html). Moto Wektor Sp. z o.o. is a Polish (Bielsko-Biała) manufacturer of custom bodies for commercial vehicles up to 3.5 t, with ~18 years of production experience.
+
+> **Data-quality note:** Four category links listed on the offer page returned **404 / „Nie znaleziono strony" (page not found)** on both the `www` and non-`www` hosts and could not be read directly: `/brygadowki.html`, `/izotermy_chlodnie_na_furgonach.html`, `/warsztat-mobilny.html`, and `/dodatkowe-doposazenie.html`. Their subject matter is partly covered by sibling pages that *did* load (the service-vans page covers brygadówki + mobile workshop; the `chlodnie_izotermy` page covers van isotherms). Rows below for those four are marked **[link 404]** and reflect only the category label/blurb shown on the offer page, not a dedicated product page.
+
+## Summary table of body types
+
+| Polish name (English gloss) | One-line description | Typical use case | Vehicle classes / brands |
+|---|---|---|---|
+| **Brygadówka** (crew/brigade body) *[link 404]* | "Zabudowy brygadowe do przewozu pracowników, narzędzi i sprzętu" (crew bodies for carrying workers, tools and equipment) | Site crews transporting workers + tools | Vans/chassis; per service-vans page built primarily on **Renault Master** |
+| **Izoterma / chłodnia na furgonie** (isothermal / refrigerated lining inside a van) *[link 404]* | "Zabudowy izotermiczne i chłodnicze na furgonach… w kontrolowanej temperaturze" (insulated/refrigerated van linings for controlled-temperature transport) | Temperature-controlled cargo in panel vans | Panel vans (covered on the chłodnie/izotermy page: **Fiat Ducato, Peugeot, Citroën**) |
+| **Warsztat mobilny na furgonie** (mobile workshop on a van) *[link 404]* | "Zabudowy serwisowe furgonów do pracy mobilnej, napraw, montażu i obsługi technicznej" (service van fit-outs for mobile repair, assembly, technical service) | Field service / repair / installation | Vans; per service-vans page **Renault Master** |
+| **Zabudowa skrzyniowa** (box / dropside body) | Practical box bodies for delivery and utility vehicles; standard, lightweight (no sides), or with hydraulic tail-lift | General load transport | **Renault, Renault Trucks, Opel, Fiat, Peugeot, Citroën, Toyota, Iveco, Mercedes** |
+| **Skrzynia z firaną** (curtain-sider / tarpaulin box) | Curtain/tarp box bodies for domestic and international haulage | Palletised side-loaded freight | **Renault (Master), Fiat, Citroën, Peugeot** |
+| **Skrzynia podnoszona / o zmiennej wysokości** (variable-height / lifting box) | Body with pneumatically adjustable interior height for different cargo | Mixed cargo needing variable headroom | **Renault Master, Renault Midlum**, Fiat/Citroën/Peugeot platforms |
+| **Kontener** (container body) | Versatile aluminium/honeycomb closed container bodies, optional self-loading lift | Distribution, courier, furniture, FMCG/food | **Peugeot, Citroën, Fiat (RZ3), Iveco, new Master, PSA group** |
+| **Chłodnia / izoterma** (refrigerated / isothermal body) | Insulated, ATP-certified bodies; insulated container, isotherm, or active fridge (−20 °C…−2 °C) | Food, pharma, temperature-sensitive goods | **Fiat Ducato, Peugeot, Citroën** |
+| **Zabudowa na platformie** (platform body) | Lightweight bodies (isothermal or container) on van platform/chassis cabs | Light functional bodies on platforms | Delivery platforms (no specific brand named on page) |
+| **Zabudowa specjalna / showroom** (special / showroom body) | Individual projects: showrooms, food trucks, mobile shops/offices, exhibition (folding) bodies | Marketing, mobile retail, exhibitions | Custom; example installation for **Bosch** |
+| **Skrzynia otwarta** (open box / dropside) | Simple durable open boxes; single/double cab, tarp, self-loading tail-lift | Everyday open-load transport | **Renault Master, Stellantis (Opel), Mercedes** |
+| **Wywrotka** (tipper) | Tipper bodies for construction, municipal and bulk transport | Bulk materials (e.g. coal), demolition crews | **Renault Master IV**, Fiat/Peugeot/Citroën/Toyota (Stellantis) |
+| **Pojedyncza i podwójna kabina sypialna / TwinCab** (single & double sleeping cabin) | Modular sleeping cabins (sizes S/M/L) for long-haul drivers | Long-distance / international driving rest | **Renault / Renault Trucks, Iveco, Stellantis, Toyota** |
+| **Dodatkowe doposażenie** (additional equipment / accessories) *[link 404]* | "Wyposażenie samochodów dostawczych i zabudów specjalistycznych" (equipment for delivery vehicles and specialist bodies) | Add-on fittings for any build | Accessory category (dedicated page unavailable) |
+| **Zabudowa na furgonach / samochody serwisowe** (van fit-outs / service vehicles) | "Zabudowy serwisowe, warsztatowe i specjalistyczne do pracy w terenie" (service, workshop and specialist van fit-outs) | Mobile workshops, inspection vehicles | Vans; primarily **Renault Master** |
+
+## Detail per product type
+
+**Brygadówka (crew body) — [dedicated link 404].** Offer-page blurb: *„Zabudowy brygadowe do przewozu pracowników, narzędzi i sprzętu"* (crew bodies for transporting workers, tools and equipment). The companion service-vehicles page describes *„zabudowa serwisowa - warsztatowa oraz brygadówki"* combining a crew compartment with workshop/tool storage, built primarily on Renault Master.
+
+**Izoterma / chłodnia na furgonie (van isotherm/fridge) — [dedicated link 404].** Covered by the chłodnie/izotermy page: insulated linings fitted *inside* the van shell, with optional refrigeration. The site defines the umbrella term: *„Zabudowy izotermiczne to ogólne pojęcie które zawiera w sobie zarówno chłodnie, izotermy ale także kontenery izolowane"* (isothermal bodies is a general term covering refrigerated units, isotherms and insulated containers).
+
+**Warsztat mobilny (mobile workshop) — [dedicated link 404].** Covered by the service-vehicles page. Variants/equipment: workshop with generator and compressor, tool storage with ramp access, brigade-workshop combination, and specialist inspection vehicles (e.g. pipe inspection — *„Przedział z robotem i nawijarką"*, compartment with robot and winder). Integrated compressed-air, electrical generator, tool systems and work platforms; built on Renault Master.
+
+**Zabudowa skrzyniowa (box / dropside body).** Three variants: (1) standard box with sides, aluminium or steel frame and custom wood flooring; (2) lightweight box **without sides** to maximise payload; (3) box with **hydraulic self-loading tail-lift**. Tagline: *„Każda zabudowa zaczyna się od rozmowy a kończy na dostarczeniu pojazdu"* (every build starts with a conversation and ends with vehicle delivery). Widest brand support: Renault, Renault Trucks, Opel, Fiat, Peugeot, Citroën, Toyota, Iveco, Mercedes.
+
+**Skrzynia z firaną (curtain-sider / tarp box).** Variants: **burtofirana z przesuwnym dachem** (side-curtain with sliding roof — *„dach i firany przesuwne oddzielnie"*, roof and curtains slide separately); **burtofirana** (side-curtain, *„przesuwne firany (naciąg korbą lub dźwignią)"*, sliding curtains tensioned by crank or lever); **firana** (curtain-only, no sides, *„dla obniżenia wagi"*, to reduce weight, with quick-mount PSM fixings); **skrzynia z przesuwnym dachem** (box with sliding roof). Built on Renault (esp. Master), Fiat, Citroën, Peugeot.
+
+**Skrzynia podnoszona / o zmiennej wysokości (variable-height box).** *„Pneumatycznie regulowana wysokość"* (pneumatically adjustable height). Variants: sliding canopy with independently sliding roof/curtains; pneumatic lift with full sliding tarp; side-curtain (burtofirana) with pneumatic lift; classic pneumatic/manual lift with fixed sides; lightweight version (no sides, aluminium floor). Adjustment options: **single-stage** (*„regulacja jednostopniowa"*, ~230 mm lift to max ~2500 mm) and **two-stage** (*„regulacja dwustopniowa"*, e.g. 1980 / 2210 / 2500 mm on a Renault Master baseline). Also referenced on Renault Midlum.
+
+**Kontener (container body).** *„Zabudowy kontenerowe to zabudowy niezwykle uniwersalne"* (container bodies are exceptionally versatile). Variants: honeycomb (plaster-of-comb) panel with translucent roof; classic aluminium container (optional telescopic ladder, reinforcement bar, plywood floor); curtain-side aluminium container; aluminium container with **self-loading lift**. Materials: honeycomb core, aluminium sheet, hot-dip galvanised steel frame, laminate, flat plywood floor; *„Rama pośrednia wykonana z lekkich profili aluminiowych"* (intermediate frame from lightweight aluminium profiles). For Peugeot/Citroën/Fiat (RZ3), Iveco, new Master, PSA group.
+
+**Chłodnia / izoterma (refrigerated / isothermal body).** Three product tiers: **kontener izolowany** (insulated container, passive, no unit — plywood or aluminium-ribbed floor, PSM points); **izoterma** (*„agregat chłodniczy opcjonalny, izolowane ściany i podłoga"*, optional refrigeration unit, insulated walls and floor); **chłodnia** (active fridge mounted in/above the spoiler, range *„-20°C do -2°C"*). Construction: three-layer ATP-certified walls, aluminium or plywood floor, rubber curtains, external power connection, LED lighting and securing rails. Fitments shown for Fiat Ducato, Peugeot, Citroën. (Cold-storage bodies are described as a growing share of production.)
+
+**Zabudowa na platformie (platform body).** Landing/category page: lightweight bodies on van platforms, principally in **isothermal** and **container** variants. No specific vehicle brand listed on this page; design via the dealer configurator with installation support and spare parts.
+
+**Zabudowa specjalna / showroom (special body).** Individual/bespoke projects: showrooms, food trucks, mobile shops and offices. Documented examples are exhibition (folding) bodies: **single-sided folding display** (*„Zabudowa wystawowa, jednostronnie rozkładana"*) and **double-sided folding display** (*„…dwustronnie rozkładana"*); one example built for Bosch.
+
+**Skrzynia otwarta (open box / dropside).** Options: single and double cab; *„Plandeka zabezpieczająca ładunek przed warunkami atmosferycznymi"* (tarp protecting cargo from the weather); *„Słupek środkowy demontowalny"* (demountable centre post); folding side step; corrugated steel floor; *„Skrzynia otwarta z windą samozaładowczą"* (open box with self-loading tail-lift, split type); hidden mounting points in the perimeter profile. On Renault Master, Stellantis (Opel), Mercedes.
+
+**Wywrotka (tipper).** *„Idealne rozwiązanie do dystrybucji materiałów sypkich takich [jak] węgiel"* (ideal for distributing bulk materials such as coal). Variants: three-way tipper (*trójstronna*), tipper with raising side extensions (*nadstawki podwyższające*), tipper with tarp (*plandeka*). Features: aluminium floor, cup-type lashing points, cargo dividers, roll-up secured tarp. On Renault Master IV and Stellantis vehicles (Fiat/Peugeot/Citroën/Toyota).
+
+**Pojedyncza i podwójna kabina sypialna / TwinCab (sleeping cabin).** Modular *„powiększone kabiny sypialne"* (enlarged sleeping cabins) for long-haul drivers; *„zapewnia wygodne miejsce do spania"* (provides a comfortable sleeping space) plus *„praktyczne schowki"* (practical storage). Offered in sizes **S, M, L** for single drivers or two-person crews. For Renault / Renault Trucks, Iveco, Stellantis, Toyota.
+
+**Zabudowa na furgonach / samochody serwisowe (van fit-outs / service vehicles).** Service/workshop and specialist van conversions: *„Zabudowa warsztatowa"* (workshop fit-out), *„Pojazd specjalistyczny"* (specialist vehicle). Configurations include workshop with generator + compressor, tool storage with ramp access, brigade-workshop combos, and robotic pipe-inspection units. Primarily on Renault Master.
+
+## Accessories / wyposażenie category
+
+Yes — there is a dedicated **„Dodatkowe doposażenie"** (additional equipment / accessories) category on the offer page, described as *„Wyposażenie samochodów dostawczych i zabudów specjalistycznych"* (equipment for delivery vehicles and specialist bodies). The dedicated product page (`/dodatkowe-doposazenie.html`) returned **404** on both hosts, so an itemised accessory list could not be retrieved. Accessory-type options *are* mentioned within individual body pages — e.g. hydraulic/self-loading tail-lifts (winda samozaładowcza), telescopic ladders, reinforcement bars, lashing/PSM mounting points, cargo dividers, LED interior lighting, securing rails, tarpaulins, folding side steps, and external power connections for refrigeration units.
+
+## Vehicle manufacturer brands MotoWektor builds on
+
+Across the offer, bodies are built on: **Renault / Renault Trucks** (incl. Master, Midlum — the most frequently cited base), **Iveco**, **Toyota**, **Mercedes**, **Fiat** (incl. Ducato), **Peugeot**, **Citroën**, **Opel**, and **Stellantis / PSA-group** vehicles generally. Brands explicitly named on the dedicated pages: Renault, Renault Trucks, Opel, Fiat, Peugeot, Citroën, Toyota, Iveco, Mercedes, plus Stellantis/PSA group references.
+
+---
+
+**Pages successfully read:** `/zabudowy_skrziowe`, `/skrzynie_firany.html`, `/skrzynie_o_zmiennej_wysokosci.html`, `/kontenery.html`, `/chlodnie_izotermy.html`, `/zabudowy_na_platformach.html`, `/zabudowy-specjalne.html`, `/skrzynie_otwarte.html`, `/wywrotki.html`, `/kabiny_sypialne_podwojne_twincab.html`, `/samochody_serwisowe.html`.
+**Pages returning 404:** `/brygadowki.html`, `/izotermy_chlodnie_na_furgonach.html`, `/warsztat-mobilny.html`, `/dodatkowe-doposazenie.html`.
