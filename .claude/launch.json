@@ -12,18 +12,6 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "start"],
       "port": 3000
-    },
-    {
-      "name": "docker-dev",
-      "runtimeExecutable": "docker",
-      "runtimeArgs": ["compose", "up", "dev", "--build"],
-      "port": 3001
-    },
-    {
-      "name": "docker-app",
-      "runtimeExecutable": "docker",
-      "runtimeArgs": ["compose", "up", "app", "--build"],
-      "port": 3000
     }
   ]
 }
